@@ -10,16 +10,16 @@ export default function Home() {
   return (
     <div className="bg-[#f5f8fc] font-sans min-h-screen">
       {/* Navigation Bar */}
-      <Navigation />
+      <div className="min-h-screen">
+        <Navigation />
 
-      {/* Main Content */}
-      <main className="max-w-4xl mx-auto mt-20 text-center px-4">
-        {/* Hero Section with Heading and Subtitle */}
         <HeroSection />
+        <div className="w-full flex justify-center mt-4">
+          <FeedbackDrop />
+        </div>
+      </div>
 
-        {/* Feedback Drop Area */}
-        <FeedbackDrop />
-      </main>
+      {/* </section> */}
 
       {/* Dashboard Section */}
       <DashboardSection />

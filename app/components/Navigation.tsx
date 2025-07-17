@@ -2,23 +2,24 @@ import Image from "next/image";
 
 export default function Navigation() {
   return (
-    <nav className="flex justify-between items-center px-8 py-6">
+    <nav className="flex items-center justify-between px-8 py-6 w-full">
+      {/* Logo */}
       <div className="flex items-center">
-        <div className="mr-10">
-          <Image
-            src="/next.svg" // Replace with Cycle logo when available
-            alt="Cycle Logo"
-            width={120}
-            height={20}
-            priority
-            className="dark:invert"
-          />
-        </div>
-        <div className="flex gap-8">
+        <Image
+          src="/images/cycle-logo.png"
+          alt="Cycle Logo"
+          width={100}
+          height={100}
+          priority
+        />
+      </div>
+      {/* Centered nav links */}
+      <div className="flex-1 flex justify-center">
+        <div className="flex gap-10">
           <div className="flex items-center">
-            <span className="text-sm font-medium">Product</span>
+            <span className="text-base font-semibold text-[#222]">Product</span>
             <svg
-              className="ml-1 w-4 h-4"
+              className="ml-1 w-4 h-4 text-[#222]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -32,12 +33,14 @@ export default function Navigation() {
               />
             </svg>
           </div>
-          <span className="text-sm font-medium">Changelog</span>
-          <span className="text-sm font-medium">Manifesto</span>
+          <span className="text-base font-semibold text-[#222]">Changelog</span>
+          <span className="text-base font-semibold text-[#222]">Manifesto</span>
           <div className="flex items-center">
-            <span className="text-sm font-medium">Resources</span>
+            <span className="text-base font-semibold text-[#222]">
+              Resources
+            </span>
             <svg
-              className="ml-1 w-4 h-4"
+              className="ml-1 w-4 h-4 text-[#222]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -53,11 +56,12 @@ export default function Navigation() {
           </div>
         </div>
       </div>
+      {/* Login and Get started buttons */}
       <div className="flex gap-4">
-        <button className="text-black text-sm font-medium px-4 py-2">
+        <button className="text-black text-base font-bold px-6 py-3 rounded-lg">
           Log in
         </button>
-        <button className="bg-black text-white rounded-full text-sm font-medium px-6 py-2">
+        <button className="bg-black text-white rounded-full text-base font-bold px-8 py-3 shadow-lg">
           Get started
         </button>
       </div>
