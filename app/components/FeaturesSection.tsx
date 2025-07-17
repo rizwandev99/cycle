@@ -12,7 +12,7 @@ export default function FeaturesSection() {
             The fastest feedback
           </h2>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            capture you'll ever see
+            capture you&apos;ll ever see
           </h2>
         </div>
       </div>
